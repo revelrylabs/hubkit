@@ -1,0 +1,150 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues?page=1&state=all
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json,application/vnd.github.beta+json;q=0.5,application/json;q=0.1
+      Accept-Charset:
+      - utf-8
+      User-Agent:
+      - Github API Ruby Gem 0.16.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sun, 14 May 2017 00:16:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '57'
+      X-Ratelimit-Reset:
+      - '1494724078'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept
+      - Accept-Encoding
+      Etag:
+      - W/"b225ab71c40e0566fe2572e726cb66ef"
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - 77fbfb53269bbb85f82f23584d59f7c1
+      X-Github-Request-Id:
+      - EDD1:5CA3:A14BAB8:CE56200:5917A1D9
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/4","repository_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo","labels_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/4/labels{/name}","comments_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/4/comments","events_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/4/events","html_url":"https://github.com/hubkit-test-machine-user/hubkit-test-repo/pull/4","id":228508340,"number":4,"title":"A
+        pr for a test","user":{"login":"prehnRA","id":3952444,"avatar_url":"https://avatars0.githubusercontent.com/u/3952444?v=3","gravatar_id":"","url":"https://api.github.com/users/prehnRA","html_url":"https://github.com/prehnRA","followers_url":"https://api.github.com/users/prehnRA/followers","following_url":"https://api.github.com/users/prehnRA/following{/other_user}","gists_url":"https://api.github.com/users/prehnRA/gists{/gist_id}","starred_url":"https://api.github.com/users/prehnRA/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/prehnRA/subscriptions","organizations_url":"https://api.github.com/users/prehnRA/orgs","repos_url":"https://api.github.com/users/prehnRA/repos","events_url":"https://api.github.com/users/prehnRA/events{/privacy}","received_events_url":"https://api.github.com/users/prehnRA/received_events","type":"User","site_admin":false},"labels":[],"state":"open","locked":false,"assignee":null,"assignees":[],"milestone":null,"comments":0,"created_at":"2017-05-14T00:06:33Z","updated_at":"2017-05-14T00:06:33Z","closed_at":null,"pull_request":{"url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/pulls/4","html_url":"https://github.com/hubkit-test-machine-user/hubkit-test-repo/pull/4","diff_url":"https://github.com/hubkit-test-machine-user/hubkit-test-repo/pull/4.diff","patch_url":"https://github.com/hubkit-test-machine-user/hubkit-test-repo/pull/4.patch"},"body":""},{"url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/3","repository_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo","labels_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/3/labels{/name}","comments_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/3/comments","events_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/3/events","html_url":"https://github.com/hubkit-test-machine-user/hubkit-test-repo/issues/3","id":228507666,"number":3,"title":"An
+        unlabeled issue","user":{"login":"prehnRA","id":3952444,"avatar_url":"https://avatars0.githubusercontent.com/u/3952444?v=3","gravatar_id":"","url":"https://api.github.com/users/prehnRA","html_url":"https://github.com/prehnRA","followers_url":"https://api.github.com/users/prehnRA/followers","following_url":"https://api.github.com/users/prehnRA/following{/other_user}","gists_url":"https://api.github.com/users/prehnRA/gists{/gist_id}","starred_url":"https://api.github.com/users/prehnRA/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/prehnRA/subscriptions","organizations_url":"https://api.github.com/users/prehnRA/orgs","repos_url":"https://api.github.com/users/prehnRA/repos","events_url":"https://api.github.com/users/prehnRA/events{/privacy}","received_events_url":"https://api.github.com/users/prehnRA/received_events","type":"User","site_admin":false},"labels":[],"state":"open","locked":false,"assignee":{"login":"prehnRA","id":3952444,"avatar_url":"https://avatars0.githubusercontent.com/u/3952444?v=3","gravatar_id":"","url":"https://api.github.com/users/prehnRA","html_url":"https://github.com/prehnRA","followers_url":"https://api.github.com/users/prehnRA/followers","following_url":"https://api.github.com/users/prehnRA/following{/other_user}","gists_url":"https://api.github.com/users/prehnRA/gists{/gist_id}","starred_url":"https://api.github.com/users/prehnRA/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/prehnRA/subscriptions","organizations_url":"https://api.github.com/users/prehnRA/orgs","repos_url":"https://api.github.com/users/prehnRA/repos","events_url":"https://api.github.com/users/prehnRA/events{/privacy}","received_events_url":"https://api.github.com/users/prehnRA/received_events","type":"User","site_admin":false},"assignees":[{"login":"prehnRA","id":3952444,"avatar_url":"https://avatars0.githubusercontent.com/u/3952444?v=3","gravatar_id":"","url":"https://api.github.com/users/prehnRA","html_url":"https://github.com/prehnRA","followers_url":"https://api.github.com/users/prehnRA/followers","following_url":"https://api.github.com/users/prehnRA/following{/other_user}","gists_url":"https://api.github.com/users/prehnRA/gists{/gist_id}","starred_url":"https://api.github.com/users/prehnRA/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/prehnRA/subscriptions","organizations_url":"https://api.github.com/users/prehnRA/orgs","repos_url":"https://api.github.com/users/prehnRA/repos","events_url":"https://api.github.com/users/prehnRA/events{/privacy}","received_events_url":"https://api.github.com/users/prehnRA/received_events","type":"User","site_admin":false}],"milestone":null,"comments":0,"created_at":"2017-05-13T23:49:14Z","updated_at":"2017-05-14T00:15:55Z","closed_at":null,"body":""},{"url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/2","repository_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo","labels_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/2/labels{/name}","comments_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/2/comments","events_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/2/events","html_url":"https://github.com/hubkit-test-machine-user/hubkit-test-repo/issues/2","id":228507344,"number":2,"title":"A
+        closed issue","user":{"login":"prehnRA","id":3952444,"avatar_url":"https://avatars0.githubusercontent.com/u/3952444?v=3","gravatar_id":"","url":"https://api.github.com/users/prehnRA","html_url":"https://github.com/prehnRA","followers_url":"https://api.github.com/users/prehnRA/followers","following_url":"https://api.github.com/users/prehnRA/following{/other_user}","gists_url":"https://api.github.com/users/prehnRA/gists{/gist_id}","starred_url":"https://api.github.com/users/prehnRA/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/prehnRA/subscriptions","organizations_url":"https://api.github.com/users/prehnRA/orgs","repos_url":"https://api.github.com/users/prehnRA/repos","events_url":"https://api.github.com/users/prehnRA/events{/privacy}","received_events_url":"https://api.github.com/users/prehnRA/received_events","type":"User","site_admin":false},"labels":[],"state":"closed","locked":false,"assignee":null,"assignees":[],"milestone":null,"comments":0,"created_at":"2017-05-13T23:40:51Z","updated_at":"2017-05-13T23:40:53Z","closed_at":"2017-05-13T23:40:53Z","body":""},{"url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/1","repository_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo","labels_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/1/labels{/name}","comments_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/1/comments","events_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/1/events","html_url":"https://github.com/hubkit-test-machine-user/hubkit-test-repo/issues/1","id":220489765,"number":1,"title":"A
+        test issue","user":{"login":"hubkit-test-machine-user","id":27156403,"avatar_url":"https://avatars2.githubusercontent.com/u/27156403?v=3","gravatar_id":"","url":"https://api.github.com/users/hubkit-test-machine-user","html_url":"https://github.com/hubkit-test-machine-user","followers_url":"https://api.github.com/users/hubkit-test-machine-user/followers","following_url":"https://api.github.com/users/hubkit-test-machine-user/following{/other_user}","gists_url":"https://api.github.com/users/hubkit-test-machine-user/gists{/gist_id}","starred_url":"https://api.github.com/users/hubkit-test-machine-user/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/hubkit-test-machine-user/subscriptions","organizations_url":"https://api.github.com/users/hubkit-test-machine-user/orgs","repos_url":"https://api.github.com/users/hubkit-test-machine-user/repos","events_url":"https://api.github.com/users/hubkit-test-machine-user/events{/privacy}","received_events_url":"https://api.github.com/users/hubkit-test-machine-user/received_events","type":"User","site_admin":false},"labels":[{"id":580072863,"url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/labels/bug","name":"bug","color":"ee0701","default":true}],"state":"open","locked":false,"assignee":{"login":"hubkit-test-machine-user","id":27156403,"avatar_url":"https://avatars2.githubusercontent.com/u/27156403?v=3","gravatar_id":"","url":"https://api.github.com/users/hubkit-test-machine-user","html_url":"https://github.com/hubkit-test-machine-user","followers_url":"https://api.github.com/users/hubkit-test-machine-user/followers","following_url":"https://api.github.com/users/hubkit-test-machine-user/following{/other_user}","gists_url":"https://api.github.com/users/hubkit-test-machine-user/gists{/gist_id}","starred_url":"https://api.github.com/users/hubkit-test-machine-user/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/hubkit-test-machine-user/subscriptions","organizations_url":"https://api.github.com/users/hubkit-test-machine-user/orgs","repos_url":"https://api.github.com/users/hubkit-test-machine-user/repos","events_url":"https://api.github.com/users/hubkit-test-machine-user/events{/privacy}","received_events_url":"https://api.github.com/users/hubkit-test-machine-user/received_events","type":"User","site_admin":false},"assignees":[{"login":"hubkit-test-machine-user","id":27156403,"avatar_url":"https://avatars2.githubusercontent.com/u/27156403?v=3","gravatar_id":"","url":"https://api.github.com/users/hubkit-test-machine-user","html_url":"https://github.com/hubkit-test-machine-user","followers_url":"https://api.github.com/users/hubkit-test-machine-user/followers","following_url":"https://api.github.com/users/hubkit-test-machine-user/following{/other_user}","gists_url":"https://api.github.com/users/hubkit-test-machine-user/gists{/gist_id}","starred_url":"https://api.github.com/users/hubkit-test-machine-user/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/hubkit-test-machine-user/subscriptions","organizations_url":"https://api.github.com/users/hubkit-test-machine-user/orgs","repos_url":"https://api.github.com/users/hubkit-test-machine-user/repos","events_url":"https://api.github.com/users/hubkit-test-machine-user/events{/privacy}","received_events_url":"https://api.github.com/users/hubkit-test-machine-user/received_events","type":"User","site_admin":false}],"milestone":null,"comments":0,"created_at":"2017-04-09T18:41:49Z","updated_at":"2017-04-10T01:42:58Z","closed_at":null,"body":"Exists
+        for testing hubkit"}]'
+    http_version: 
+  recorded_at: Sun, 14 May 2017 00:16:25 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues?page=2&state=all
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json,application/vnd.github.beta+json;q=0.5,application/json;q=0.1
+      Accept-Charset:
+      - utf-8
+      User-Agent:
+      - Github API Ruby Gem 0.16.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sun, 14 May 2017 00:16:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2'
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '56'
+      X-Ratelimit-Reset:
+      - '1494724078'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept
+      - Accept-Encoding
+      Etag:
+      - '"fafd06a937c504cece6726ba7201b0a1"'
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Link:
+      - <https://api.github.com/repositories/87730904/issues?state=all&page=1>; rel="last",
+        <https://api.github.com/repositories/87730904/issues?state=all&page=1>; rel="first",
+        <https://api.github.com/repositories/87730904/issues?state=all&page=1>; rel="prev"
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - b535085e7f4d6e3423e016e684de0829
+      X-Github-Request-Id:
+      - EDD2:5CA3:A14BAD3:CE56221:5917A1D9
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Sun, 14 May 2017 00:16:25 GMT
+recorded_with: VCR 2.9.3

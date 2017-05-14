@@ -1,0 +1,206 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/hubkit-test-repo/issues?page=1&state=open
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json,application/vnd.github.beta+json;q=0.5,application/json;q=0.1
+      Accept-Charset:
+      - utf-8
+      User-Agent:
+      - Github API Ruby Gem 0.16.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sun, 09 Apr 2017 19:33:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 404 Not Found
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '59'
+      X-Ratelimit-Reset:
+      - '1491770014'
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Github-Request-Id:
+      - CABB:42B6:378B408:45C8BE7:58EA8C8E
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"Not Found","documentation_url":"https://developer.github.com/v3"}'
+    http_version: 
+  recorded_at: Sun, 09 Apr 2017 19:33:34 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues?page=1&state=open
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json,application/vnd.github.beta+json;q=0.5,application/json;q=0.1
+      Accept-Charset:
+      - utf-8
+      User-Agent:
+      - Github API Ruby Gem 0.16.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sun, 09 Apr 2017 19:36:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '58'
+      X-Ratelimit-Reset:
+      - '1491770014'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept
+      - Accept-Encoding
+      Etag:
+      - W/"efbc5e2bcda89b3178a1fff40d8543eb"
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - 10ea50bffaded85949561216def301f3
+      X-Github-Request-Id:
+      - CAF2:42B4:23B2407:2CD8CE5:58EA8D35
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/1","repository_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo","labels_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/1/labels{/name}","comments_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/1/comments","events_url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues/1/events","html_url":"https://github.com/hubkit-test-machine-user/hubkit-test-repo/issues/1","id":220489765,"number":1,"title":"A
+        test issue","user":{"login":"hubkit-test-machine-user","id":27156403,"avatar_url":"https://avatars2.githubusercontent.com/u/27156403?v=3","gravatar_id":"","url":"https://api.github.com/users/hubkit-test-machine-user","html_url":"https://github.com/hubkit-test-machine-user","followers_url":"https://api.github.com/users/hubkit-test-machine-user/followers","following_url":"https://api.github.com/users/hubkit-test-machine-user/following{/other_user}","gists_url":"https://api.github.com/users/hubkit-test-machine-user/gists{/gist_id}","starred_url":"https://api.github.com/users/hubkit-test-machine-user/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/hubkit-test-machine-user/subscriptions","organizations_url":"https://api.github.com/users/hubkit-test-machine-user/orgs","repos_url":"https://api.github.com/users/hubkit-test-machine-user/repos","events_url":"https://api.github.com/users/hubkit-test-machine-user/events{/privacy}","received_events_url":"https://api.github.com/users/hubkit-test-machine-user/received_events","type":"User","site_admin":false},"labels":[],"state":"open","locked":false,"assignee":{"login":"hubkit-test-machine-user","id":27156403,"avatar_url":"https://avatars2.githubusercontent.com/u/27156403?v=3","gravatar_id":"","url":"https://api.github.com/users/hubkit-test-machine-user","html_url":"https://github.com/hubkit-test-machine-user","followers_url":"https://api.github.com/users/hubkit-test-machine-user/followers","following_url":"https://api.github.com/users/hubkit-test-machine-user/following{/other_user}","gists_url":"https://api.github.com/users/hubkit-test-machine-user/gists{/gist_id}","starred_url":"https://api.github.com/users/hubkit-test-machine-user/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/hubkit-test-machine-user/subscriptions","organizations_url":"https://api.github.com/users/hubkit-test-machine-user/orgs","repos_url":"https://api.github.com/users/hubkit-test-machine-user/repos","events_url":"https://api.github.com/users/hubkit-test-machine-user/events{/privacy}","received_events_url":"https://api.github.com/users/hubkit-test-machine-user/received_events","type":"User","site_admin":false},"assignees":[{"login":"hubkit-test-machine-user","id":27156403,"avatar_url":"https://avatars2.githubusercontent.com/u/27156403?v=3","gravatar_id":"","url":"https://api.github.com/users/hubkit-test-machine-user","html_url":"https://github.com/hubkit-test-machine-user","followers_url":"https://api.github.com/users/hubkit-test-machine-user/followers","following_url":"https://api.github.com/users/hubkit-test-machine-user/following{/other_user}","gists_url":"https://api.github.com/users/hubkit-test-machine-user/gists{/gist_id}","starred_url":"https://api.github.com/users/hubkit-test-machine-user/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/hubkit-test-machine-user/subscriptions","organizations_url":"https://api.github.com/users/hubkit-test-machine-user/orgs","repos_url":"https://api.github.com/users/hubkit-test-machine-user/repos","events_url":"https://api.github.com/users/hubkit-test-machine-user/events{/privacy}","received_events_url":"https://api.github.com/users/hubkit-test-machine-user/received_events","type":"User","site_admin":false}],"milestone":null,"comments":0,"created_at":"2017-04-09T18:41:49Z","updated_at":"2017-04-09T18:42:08Z","closed_at":null,"body":""}]'
+    http_version: 
+  recorded_at: Sun, 09 Apr 2017 19:36:21 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/issues?page=2&state=open
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json,application/vnd.github.beta+json;q=0.5,application/json;q=0.1
+      Accept-Charset:
+      - utf-8
+      User-Agent:
+      - Github API Ruby Gem 0.16.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sun, 09 Apr 2017 19:36:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2'
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '57'
+      X-Ratelimit-Reset:
+      - '1491770014'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept
+      - Accept-Encoding
+      Etag:
+      - '"fafd06a937c504cece6726ba7201b0a1"'
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Link:
+      - <https://api.github.com/repositories/87730904/issues?state=open&page=1>; rel="last",
+        <https://api.github.com/repositories/87730904/issues?state=open&page=1>; rel="first",
+        <https://api.github.com/repositories/87730904/issues?state=open&page=1>; rel="prev"
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - bae57931a6fe678a3dffe9be8e7819c8
+      X-Github-Request-Id:
+      - CAF3:42B6:3791D31:45D0C55:58EA8D35
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Sun, 09 Apr 2017 19:36:21 GMT
+recorded_with: VCR 2.9.3

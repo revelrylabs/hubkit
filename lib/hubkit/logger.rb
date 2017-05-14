@@ -27,11 +27,12 @@ module Hubkit
     end
 
     def self.inner_logger
-      if Kernel.const_defined? 'Rails'
-        @_inner_logger ||= Rails.logger
-      else
-        @_inner_logger ||= ::Logger.new(STDERR)
-      end
+      @_inner_logger ||=
+        if Kernel.const_defined? 'Rails'
+          Rails.logger
+        else
+          ::Logger.new(STDERR)
+        end
     end
   end
 end

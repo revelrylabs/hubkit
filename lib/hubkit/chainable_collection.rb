@@ -1,7 +1,7 @@
 # A class which wraps an array (or Enumerable) and provides convenience
 # methods for chainable filters, e.g.:
 #     repo.issues.unassigned.labeled('in progress')
-module ChainableCollection
+module Hubkit
   class ChainableCollection
     def self.scope(name, &block)
       define_method name do |*args|
@@ -15,6 +15,11 @@ module ChainableCollection
       @inner = inner
     end
 
+    def select(&block)
+      return wrap(@inner.select &block) if block_given?
+      wrap(@inner.select)
+    end
+
     def wrap(items)
       self.class.new(items)
     end
@@ -24,15 +29,16 @@ module ChainableCollection
     end
 
     def method_missing(name, *args, &block)
-      if @inner.respond_to?(name)
-        @inner.send(name, *args, &block)
-      else
-        super
-      end
+      return super unless @inner.respond_to?(name)
+      @inner.send(name, *args, &block)
     end
 
     def not
       NotCollection.new(self)
+    end
+
+    def ==(other)
+      other == self.to_a
     end
   end
 

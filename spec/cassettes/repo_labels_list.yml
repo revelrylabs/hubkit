@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/labels?per_page=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json,application/vnd.github.beta+json;q=0.5,application/json;q=0.1
+      Accept-Charset:
+      - utf-8
+      User-Agent:
+      - Github API Ruby Gem 0.16.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sun, 09 Apr 2017 19:40:30 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '56'
+      X-Ratelimit-Reset:
+      - '1491770014'
+      Cache-Control:
+      - public, max-age=60, s-maxage=60
+      Vary:
+      - Accept
+      - Accept-Encoding
+      Etag:
+      - W/"193ba2ef566394a55cfa9c024d1d3a19"
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - eef8b8685a106934dcbb4b7c59fba0bf
+      X-Github-Request-Id:
+      - CB5C:42B3:111C606:157DEF2:58EA8E2E
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":580072863,"url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/labels/bug","name":"bug","color":"ee0701","default":true},{"id":580072864,"url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/labels/duplicate","name":"duplicate","color":"cccccc","default":true},{"id":580072865,"url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/labels/enhancement","name":"enhancement","color":"84b6eb","default":true},{"id":580072866,"url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/labels/help%20wanted","name":"help
+        wanted","color":"128A0C","default":true},{"id":580072867,"url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/labels/invalid","name":"invalid","color":"e6e6e6","default":true},{"id":580072868,"url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/labels/question","name":"question","color":"cc317c","default":true},{"id":580072869,"url":"https://api.github.com/repos/hubkit-test-machine-user/hubkit-test-repo/labels/wontfix","name":"wontfix","color":"ffffff","default":true}]'
+    http_version: 
+  recorded_at: Sun, 09 Apr 2017 19:40:30 GMT
+recorded_with: VCR 2.9.3
