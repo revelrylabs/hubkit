@@ -19,8 +19,13 @@ require 'hubkit/repo_paginator'
 require 'hubkit/repo'
 require 'hubkit/version'
 
+# Main module of the hubkit library. This is generally not used directly, but
+# through a subclass such as Hubkit::IssueCollection, Hubkit::EventCollection,
+# Hubkit::Repo, etc.
 module Hubkit
   class << self
+    # Return the Github client used by the library
+    # @return [Github::Client] the github API client
     def client
       Configuration.client
     end

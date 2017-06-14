@@ -1,7 +1,10 @@
-# An object that handles Github rate throttling by setting a delay and then
-# retrying a block
 module Hubkit
+  # An object that handles Github rate throttling by setting a delay and then
+  # retrying a block
   class Cooldowner
+    # Perform an action, and if Github rejects it due to rate limit, sleep and
+    # try again later
+    # @yield
     def self.with_cooldown
       cooldown = 1
       begin
