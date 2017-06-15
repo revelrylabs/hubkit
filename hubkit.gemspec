@@ -8,6 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Hubkit::VERSION
   spec.authors       = ["Robert Prehn"]
   spec.email         = ["robert@revelry.co"]
+  spec.licenses    = ['MIT']
 
   spec.summary       = "Higher level abstractions for querying the github API"
   spec.description   = <<-DESC
@@ -25,7 +26,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency 'github_api', '~> 0.16.0'
-  spec.add_dependency 'activesupport'
+  spec.add_dependency 'activesupport', '>= 4', '< 6'
 
   spec.add_development_dependency "bundler", "~> 1.14"
   spec.add_development_dependency "rake", "~> 10.0"
