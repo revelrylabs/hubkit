@@ -6,8 +6,8 @@ require 'hubkit/version'
 Gem::Specification.new do |spec|
   spec.name          = "hubkit"
   spec.version       = Hubkit::VERSION
-  spec.authors       = ["Robert Prehn"]
-  spec.email         = ["robert@revelry.co"]
+  spec.authors       = ["Robert Prehn", "Revelry Labs"]
+  spec.email         = ["robert@revelry.co", "support@revelry.co"]
   spec.licenses    = ['MIT']
 
   spec.summary       = "Higher level abstractions for querying the github API"
@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
     making individual API calls. Think of it like an ORM for the github API.
   DESC
 
-  spec.homepage      = "https://github.com/prehnRA/hubkit"
+  spec.homepage      = "https://github.com/revelrylabs/hubkit"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
