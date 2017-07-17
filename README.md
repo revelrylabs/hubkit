@@ -1,3 +1,5 @@
+Master build status: ![TravisCI Build Status](https://travis-ci.org/revelrylabs/hubkit.svg)
+
 # Hubkit
 
 Hubkit is a high level library for interacting with the github API. It is focused on models and collections,
