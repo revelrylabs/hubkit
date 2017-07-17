@@ -45,13 +45,13 @@ Hubkit supports Repo, Event, and Issue models which correspond to those resource
 Repo model:
 
 ```ruby
-repo = Repo.new(org: 'rails', 'rails')
+repo = Hubkit::Repo.new(org: 'rails', 'rails')
 ```
 
 Issue model:
 
 ```ruby
-issue = Repo.new(org: 'rails', repo: 'rails', number: 1)
+issue = Hubkit::Repo.new(org: 'rails', repo: 'rails', number: 1)
 ```
 
 #### Filterable scopes
