@@ -1,6 +1,7 @@
-Master build status: ![TravisCI Build Status](https://travis-ci.org/revelrylabs/hubkit.svg)
-
 # Hubkit
+
+![TravisCI Build Status](https://travis-ci.org/revelrylabs/hubkit.svg)
+[![Coverage Status](https://coveralls.io/repos/github/revelrylabs/hubkit/badge.svg?branch=master)](https://coveralls.io/github/revelrylabs/hubkit?branch=master)
 
 Hubkit is a high level library for interacting with the github API. It is focused on models and collections,
 not individual API operations. If the github_api gem is a raw database connection, Hubkit is an ORM.
