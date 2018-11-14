@@ -20,6 +20,7 @@ VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
   c.hook_into :webmock
   c.filter_sensitive_data('<GITHUB_TOKEN>') { ENV['GITHUB_TOKEN'] }
+  c.ignore_request { |req| req.uri.start_with?(ENV['COVERALLS_ENDPOINT'] || 'coveralls.io') }
 end
 
 Dotenv.load
