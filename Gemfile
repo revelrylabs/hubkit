@@ -8,7 +8,7 @@ group :development, :test do
   # rubocop:disable Style/ExtraSpacing
   gem 'cucumber',  '~> 2.1'
   gem 'dotenv'
-  gem 'rspec',     '~> 3.5.0'
+  gem 'rspec',     '~> 3.8.0'
   gem 'rspec-collection_matchers'
   gem 'simplecov', '~> 0.11.2'
   gem 'vcr',       '~> 2.6'
