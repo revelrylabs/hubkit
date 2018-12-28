@@ -10,7 +10,7 @@ group :development, :test do
   gem 'dotenv'
   gem 'rspec',     '~> 3.5.0'
   gem 'rspec-collection_matchers'
-  gem 'simplecov', '~> 0.11.2'
+  gem 'simplecov', '~> 0.16.1'
   gem 'vcr',       '~> 2.6'
   gem 'webmock',   '~> 3.5.1'
   gem 'yard',      '~> 0.9.11'
