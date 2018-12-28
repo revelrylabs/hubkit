@@ -12,6 +12,6 @@ group :development, :test do
   gem 'rspec-collection_matchers'
   gem 'simplecov', '~> 0.11.2'
   gem 'vcr',       '~> 2.6'
-  gem 'webmock',   '~> 1.17.3'
+  gem 'webmock',   '~> 3.5.1'
   gem 'yard',      '~> 0.9.11'
 end
