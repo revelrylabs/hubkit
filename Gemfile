@@ -13,5 +13,5 @@ group :development, :test do
   gem 'simplecov', '~> 0.11.2'
   gem 'vcr',       '~> 2.6'
   gem 'webmock',   '~> 1.17.3'
-  gem 'yard',      '~> 0.9.11'
+  gem 'yard',      '~> 0.9.20'
 end
